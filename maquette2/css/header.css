@@ -1,0 +1,192 @@
+header {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    flex-direction: row;
+    background: #1f1e2848;
+    -webkit-backdrop-filter: blur(5px);
+    /* assure la compatibilité avec safari */
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+header div {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 25%;
+    justify-content: center;
+}
+
+.logo img {
+    display: flex;
+    height: 40%;
+}
+
+.lien{
+    color: #cacaca;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.boutons button {
+    padding: 20px 60px 20px 60px;
+    margin: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    display: flex;
+}
+
+.login {
+    color: #2493df;
+    background: none;
+    border-radius: 0.3em;
+    -moz-border-radius: 0.3em;
+    -webkit-border-radius: 0.3em;
+    -khtml-border-radius: 0.3em;
+    border: #2493df solid 1px;
+}
+
+.registre {
+    color: #fff;
+    background: #2493df;
+    border-radius: 0.3em;
+    -moz-border-radius: 0.3em;
+    -webkit-border-radius: 0.3em;
+    -khtml-border-radius: 0.3em;
+    border: none;
+}
+/*partie menu*/
+#nave {
+    width: 5vh;
+    height: 5vh;
+    position: fixed;
+    right: 3%;
+    top: 3%;
+    z-index: 10000;
+    background: rgba(0, 0, 0, 0);
+}
+
+#nave div {
+    width: 70%;
+    height: 0.5vh;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    left: 0;
+    transition: 1s;
+}
+
+#barre1 {
+    top: 0vh;
+}
+
+#barre2 {
+    top: 1.3vh;
+}
+
+#barre3 {
+    top: 2.6vh;
+}
+
+#menu {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 2vh;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.468);
+    -webkit-backdrop-filter: blur(5px);
+    /* assure la compatibilité avec safari */
+    backdrop-filter: blur(5px);
+    right: -100%;
+    top: 13vh;
+    z-index: 1000;
+    transition: 1s;
+    padding: 4vh;
+}
+
+#menu a {
+    color: white;
+    display: flex;
+    font-size: 20px;
+    margin: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.logMenu{
+    margin: 20px;
+    padding: 20px;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .liens, .boutons {
+        display: none;
+    }
+    header{
+        height: 80px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .liens, .boutons {
+        display: none;
+    }
+    header {
+        height: 90px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .liens, .boutons {
+        display: none;
+    }
+    header {
+        height: 100px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .liens, .boutons {
+        display: none;
+    }
+    header {
+        height: 110px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .liens {
+        width: 50%;
+        justify-content: end;
+        display: flex;
+    }
+    .boutons {
+        width: 35%;
+        justify-content: center;
+        display: flex;
+    }
+    .liens a {
+        font-size: 20px;
+        margin: 15px;
+    }
+    .boutons button {
+        font-size: 10px;
+    }
+    #nave {
+        display: none;
+    }
+    header {
+        height: 130px;
+    }
+}
