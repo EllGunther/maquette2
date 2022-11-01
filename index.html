@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Name Site</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="css/header.css">
     <script src="./js/app.js" defer></script>
@@ -15,27 +15,33 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-        <header class="header">
-            <div class="logo">
-                <img src="./img/logo25.png" alt="logo">
-            </div>
-            <div class="liens">
-                <a href="" class="lien">Courses</a><a href="" class="lien">Code Playground</a><a href=""
-                    class="lien">Discuss</a><a href="" class="lien">Blog</a><a href="" class="lien">Get Pro</a>
-            </div>
-        </header>
+    <!-- barre de navigation-->
+    <header class="header">
+        <div class="logo">
+            <img src="./img/logo25.png" alt="logo">
+        </div>
+        <div class="liens">
+            <a href="#line" class="lien">Line</a>
+            <a href="#about" class="lien">About</a>
+            <a href="#history" class="lien">History</a>
+            <a href="#location" class="lien">Location</a>
+            <a href="#contact" class="lien">Contact us</a>
+        </div>
+    </header>
     <main>
+        <!--Partie presentation-->
         <div class="presentation">
             <div></div>
             <div></div>
-            <div class="entete">
+            <div class="entete"><!--images de presentation en background css-->
                 <h1 class="titre">YACHTS</h1>
                 <p class="phrase">WE DESIGN, ENGINEER, FABRICATE, INSTALL.</p>
                 <p class="phrase">PROGRAM AND MAINTAIN NETWORK</p>
-                <button class="btn">LEARN MORE</button>
+                <button class="btn"><a href="#about">LEARN MORE</a></button>
             </div>
         </div>
-        <div class="pub">
+        <!--Partie aux deux images de description-->
+        <div class="pub" id="line">
             <div class="pub1 img">
                 <div>CRUISE LINE</div>
             </div>
@@ -43,9 +49,10 @@
                 <div>COMMERCIAL VESSELS</div>
             </div>
         </div>
+        <!--Cartes scrollables-->
         <div class="block">
             <div class="car" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
-                <div class="deroule"><img src="" alt=""></div>
+                <div class="deroule"></div>
                 <div class="deroule"></div>
                 <div class="deroule"></div>
                 <div class="deroule"></div>
@@ -55,8 +62,9 @@
                 <div class="deroule"></div>
             </div>
         </div>
+        <!--Partie des informations relatives a l'entreprise-->
         <div class="about pub image">
-            <div class="contenu">
+            <div class="contenu" id="about">
                 <h1>ABOUT</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptates nam corporis iusto minus est voluptatem voluptatibus aperiam eveniet. Dolor rerum eveniet ipsa a perspiciatis consequatur inventore architecto illo. In.</p>
             </div>
@@ -64,21 +72,23 @@
         </div>
         <div class="history pub">
             <div class="historyImage image"></div>
-            <div class="contenu">
+            <div class="contenu" id="history">
                 <h1>HISTORY</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex atque tenetur sequi enim quia aliquid quasi quam vitae aliquam nostrum neque, aperiam consequuntur sed id, praesentium beatae facilis reprehenderit in?</p>
             </div>
         </div>
+        <!--Adresse de l'entreprise-->
         <div class="location pub">
-            <div class="contenu">
+            <div class="contenu" id="location">
                 <h1>LOCATION</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, dolore eum? Hic, asperiores. Id delectus tenetur hic consequatur sunt corrupti doloribus, esse vero dolorum omnis eos pariatur impedit quos harum.</p>
             </div>
+            <!--googleMap-->
             <div class="carte">
                 <iframe id="iframe" src="https://maps.google.com/maps?q=-11.675637, 27.481685&hl=es;z=14&amp;output=embed"></iframe>
             </div>
         </div>
-        <div class="contact">
+        <div class="contact" id="contact">
             <div class="form">
                 <h1 class="theme">CONTACT US</h1>
                 <form class="formulaire">
@@ -86,7 +96,7 @@
                     <input type="text" placeholder="Enter Company/Ship">
                     <input type="text" placeholder="To:">
                     <textarea name="" id="" cols="30" rows="10">Enter your Enquiry</textarea>
-                    <button class="bouton">SEND</button>
+                    <button class="bouton" id="send">SEND</button>
                 </form>
             </div>
             <div class="nous">
@@ -100,6 +110,7 @@
                 </div>
             </div>
         </div>
+        <!--Photographie d'un site-->
         <div class="bas">
             <div>
                 <p>HR-TEAM Mrs. juds</p>
@@ -109,15 +120,17 @@
             <div></div>
         </div>
     </main>
+
     <footer class="w-full bg-gray-100 dark:bg-gray-900 py-16">
         <div class="md:px-12 lg:px-28">
             <div class="container m-auto space-y-6 text-gray-600 dark:text-gray-300">
                 <img src="" alt="logo" class="m-auto w-40" />
                 <ul role="list" class="flex flex-col items-center justify-center gap-4 py-4 sm:flex-row sm:gap-8">
-                    <li role="listitem"><a href="#" class="hover:text-primary">Home</a></li>
-                    <li role="listitem"><a href="#" class="hover:text-primary">Features</a></li>
-                    <li role="listitem"><a href="#" class="hover:text-primary">Get started</a></li>
-                    <li role="listitem"><a href="#" class="hover:text-primary">About us</a></li>
+                    <li role="listitem"><a href="#line" class="lien hover:text-primary">Line</a></li>
+                    <li role="listitem"><a href="#about" class="lien hover:text-primary">About</a></li>
+                    <li role="listitem"><a href="#history" class="lien hover:text-primary">History</a></li>
+                    <li role="listitem"><a href="#location" class="lien hover:text-primary">Location</a></li>
+                    <li role="listitem"><a href="#contact" class="lien hover:text-primary">Contact us</a></li>       
                 </ul>
                 <div class="m-auto flex w-max items-center justify-between space-x-4">
                     <a href="tel:+243996660436" aria-label="call">
@@ -156,17 +169,19 @@
             </div>
         </div>
     </footer>
-        <nav id="nave">
-            <div id="barre1"></div>
-            <div id="barre2"></div>
-            <div id="barre3"></div>
-        </nav>
-        <div id="menu">
-            <a href="" class="lien">Courses</a><a href="" class="lien">Code Playground</a><a href="" class="lien">Discuss</a><a
-                href="" class="lien">Blog</a><a href="" class="lien">Get Pro</a>
-            <!-- <div class="bouton"> -->
-            <!-- </div> -->
-        </div>
+    <!--menu pour petit ecrans-->
+    <nav id="nave">
+        <div id="barre1"></div>
+        <div id="barre2"></div>
+        <div id="barre3"></div>
+    </nav>
+    <div id="menu">
+        <a href="#line" class="lien">Line</a>
+        <a href="#about" class="lien">About</a>
+        <a href="#history" class="lien">History</a>
+        <a href="#location" class="lien">Location</a>
+        <a href="#contact" class="lien">Contact us</a>
+    </div>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>

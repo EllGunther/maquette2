@@ -1,3 +1,4 @@
+//code pour le bouton burger du menu sur petit ecrans
 let nv = document.getElementById('nave');
 let cmpt = 0;
 let menu = document.getElementById('menu');
