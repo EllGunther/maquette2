@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/header.css">
     <script src="./js/app.js" defer></script>
     <script src="https://kit.fontawesome.com/4a314d7cd5.js" crossorigin="anonymous"></script>
-    
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -21,32 +21,31 @@
             <img src="./img/logo25.png" alt="logo">
         </div>
         <div class="liens">
-            <a href="#line" class="lien">Line</a>
-            <a href="#about" class="lien">About</a>
-            <a href="#history" class="lien">History</a>
-            <a href="#location" class="lien">Location</a>
-            <a href="#contact" class="lien">Contact us</a>
+            <a href="#line" class="lien">Accueil</a>
+            <a href="#about" class="lien">À propos de nous</a>
+            <a href="#history" class="lien">Parcourt d’affaires</a>
+            <a href="#location" class="lien">Addresse</a>
+            <a href="#contact" class="lien">Nos contacts</a>
         </div>
     </header>
     <main>
         <!--Partie presentation-->
-        <div class="presentation">
+        <div class="presentation" id="line">
             <div></div>
             <div></div>
             <div class="entete"><!--images de presentation en background css-->
-                <h1 class="titre">YACHTS</h1>
-                <p class="phrase">WE DESIGN, ENGINEER, FABRICATE, INSTALL.</p>
-                <p class="phrase">PROGRAM AND MAINTAIN NETWORK</p>
-                <button class="btn"><a href="#about">LEARN MORE</a></button>
+                <h1 class="titre">CONGO QUEEN SARL</h1>
+                <p class="phrase">COMMANDE – ETUDE – ACHAT – PAIEMENT ET LIVRAISON</p>
+                <button class="btn"><a href="#about">VOIR PLUS</a></button>
             </div>
         </div>
         <!--Partie aux deux images de description-->
-        <div class="pub" id="line">
+        <div class="pub">
             <div class="pub1 img">
-                <div>CRUISE LINE</div>
+                <div>FRET AÉRIEN</div>
             </div>
             <div class="pub2 img">
-                <div>COMMERCIAL VESSELS</div>
+                <div>FRET MARITIME</div>
             </div>
         </div>
         <!--Cartes scrollables-->
@@ -65,23 +64,33 @@
         <!--Partie des informations relatives a l'entreprise-->
         <div class="about pub image">
             <div class="contenu" id="about">
-                <h1>ABOUT</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptates nam corporis iusto minus est voluptatem voluptatibus aperiam eveniet. Dolor rerum eveniet ipsa a perspiciatis consequatur inventore architecto illo. In.</p>
+                <h1>À PROPOS DE NOUS</h1>
+                <p>La société CONGO QUEEN SARL est constituée légalement et offre des services de haute qualité dans le secteur
+                d’importation des marchandises de l’étranger vers la RDC.
+                Les marchandises faisant objet d’importation par la société CONGO QUEEN sont généralement inaccessibles en RDC, tant en
+                quantité qu’en qualité. <br>CONGO QUEEN vous offre un service souple des importations et organise ainsi les services avec diligence aux fins
+                d’asseoir la confiance non seulement des partenaires aux pays d’importation mais aussi des clients.
+            </p>
             </div>
             <div class="aboutImage image"></div>
         </div>
         <div class="history pub">
             <div class="historyImage image"></div>
             <div class="contenu" id="history">
-                <h1>HISTORY</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex atque tenetur sequi enim quia aliquid quasi quam vitae aliquam nostrum neque, aperiam consequuntur sed id, praesentium beatae facilis reprehenderit in?</p>
+                <h1>PARCOURT D’AFFAIRE</h1>
+                <p>Le parcourt prend sa genèse, lorsque la commande s’est effectuée soit au bureau soit par voie de notre site WEB, selon
+                l’achat assistance, le transport maritime ou routier ou aérien.
+                A savoir ;<br>
+                Commande – Etude – Achat – paiement et livraison</p>
             </div>
         </div>
         <!--Adresse de l'entreprise-->
         <div class="location pub">
             <div class="contenu" id="location">
-                <h1>LOCATION</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, dolore eum? Hic, asperiores. Id delectus tenetur hic consequatur sunt corrupti doloribus, esse vero dolorum omnis eos pariatur impedit quos harum.</p>
+                <h1>ADDRESSE</h1>
+                <p>Avenue Kasaï, Quartier Makutano, Commune de Lubumbashi.
+                Référence Home 500.
+            </p>
             </div>
             <!--googleMap-->
             <div class="carte">
@@ -90,23 +99,25 @@
         </div>
         <div class="contact" id="contact">
             <div class="form">
-                <h1 class="theme">CONTACT US</h1>
-                <form class="formulaire">
-                    <input type="text" placeholder="Enter Name">
-                    <input type="text" placeholder="Enter Company/Ship">
-                    <input type="text" placeholder="To:">
-                    <textarea name="" id="" cols="30" rows="10">Enter your Enquiry</textarea>
-                    <button class="bouton" id="send">SEND</button>
-                </form>
+                <h1 class="theme">Nos contacts</h1>
+                <p>+243 82 792 77 55 <br>
+                +243 90 464 41 17
+                </p>
             </div>
             <div class="nous">
                 <div class="thVue">
-                    <h1 class="theme">SALES</h1>
-                    <div class="vue premier img"></div>
+                    <h1 class="theme">Nos partenaires d’affaires</h1>
+                    <p>• Nigéria : ALL BEST CARGO <br>
+                    • Tanzanie DECENT LOGISTICS LTD <br>
+                    • Chine XI YA Import <br>
+                    • Zambie SILMA FREIGHT LTD
+</p>
                 </div>
                 <div class="thVue">
-                    <h1 class="theme">SUPPORT & SERVICE</h1>
-                    <div class="vue deuxieme img"></div>
+                    <h1 class="theme" style="margin-top: 30px;">MODE D’ACQUISITION</h1>
+                    <p>La société CONGO QUEEN organise des cargaisons des contenaires qui viennent soit par voie maritime, soit par voie
+                    aérienne ou par voie routière, selon l’ option de l’importateur , les exigences de conditionnement des marchandises,
+                    jusqu’à Lubumbashi ou toute autre lieu destiné.</p>
                 </div>
             </div>
         </div>
@@ -126,11 +137,11 @@
             <div class="container m-auto space-y-6 text-gray-600 dark:text-gray-300">
                 <img src="" alt="logo" class="m-auto w-40" />
                 <ul role="list" class="flex flex-col items-center justify-center gap-4 py-4 sm:flex-row sm:gap-8">
-                    <li role="listitem"><a href="#line" class="lien hover:text-primary">Line</a></li>
-                    <li role="listitem"><a href="#about" class="lien hover:text-primary">About</a></li>
-                    <li role="listitem"><a href="#history" class="lien hover:text-primary">History</a></li>
-                    <li role="listitem"><a href="#location" class="lien hover:text-primary">Location</a></li>
-                    <li role="listitem"><a href="#contact" class="lien hover:text-primary">Contact us</a></li>       
+                    <li role="listitem"><a href="#line" class="lien hover:text-primary">Accueil</a></li>
+                    <li role="listitem"><a href="#about" class="lien hover:text-primary">À propos de nous</a></li>
+                    <li role="listitem"><a href="#history" class="lien hover:text-primary">Parcourt d’affaires</a></li>
+                    <li role="listitem"><a href="#location" class="lien hover:text-primary">Addresse</a></li>
+                    <li role="listitem"><a href="#contact" class="lien hover:text-primary">Nos contacts</a></li>       
                 </ul>
                 <div class="m-auto flex w-max items-center justify-between space-x-4">
                     <a href="tel:+243996660436" aria-label="call">
@@ -164,7 +175,10 @@
                 </div>
     
                 <div class="text-center">
-                    <span class="text-sm tracking-wide"> <span id="year"></span> </span>
+                    <span class="text-sm tracking-wide">RCCM
+                    ID NA
+                    
+ <span id="year">NIF</span> </span>
                 </div>
             </div>
         </div>

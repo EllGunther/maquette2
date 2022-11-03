@@ -124,7 +124,7 @@ header {
     background-repeat: no-repeat;
 }
 .historyImage{
-    background-image: url("../images/histoire.jpg");
+    background-image: url("../images/histoire.png");
     background-size: 100% ;
     background-repeat: no-repeat;
 }
@@ -189,6 +189,11 @@ header {
     display: flex;
     flex-direction: column;
     color: white;
+    font-size: 22px;
+}
+.theme{
+    font-size: 25px;
+    font-weight: 800;
 }
 .vue{
     width: 90%;
